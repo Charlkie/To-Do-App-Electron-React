@@ -1,0 +1,201 @@
+*:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+*:active {
+    border-color: inherit;
+}
+
+ul.ant-menu {
+    border-right: none !important;
+    border-right-color: white !important;
+}
+
+li.ant-menu-item {
+    border-left: none !important;
+    border-left-color: none !important;
+}
+
+div.ant-layout-sider-children, div.ant-layout-sider-trigger {
+    border-right: 1px solid rgba(0,0,0,0.1) !important
+}
+
+input, button, Button {
+    height: 45px;
+}
+
+button {
+    border: none;
+    line-height: 29.25px;
+}
+
+button:hover {
+    cursor: pointer
+}
+
+.new-todo {
+    /* position: absolute; */
+    top: 0 !important;
+    width: 100%;
+    display: inline-flex;
+    padding: 0;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.new-todo input {
+    display: block;
+    width: 90%;
+    border: none;
+    padding-left: 10%;
+}
+
+.new-todo input:focus {
+    border: none;
+    outline: none;
+}
+
+.new-todo div {
+    width: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.new-todo div button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0;
+    margin-top:1px;
+    /* background-color: rgb(143, 233, 255); */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white
+}
+
+.new-todo div button Icon {
+    bottom: 5px;
+}
+
+.new-todo div button:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    /* color: rgb(224, 224, 224); */
+}
+
+.todos {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    background: white;
+}
+
+.todo {
+    border-top: 1px solid rgb(224, 224, 224);
+    display: inline-flex !important;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.todo button {
+    border: none;
+    text-align: center;
+    padding: 0;
+}
+
+.done {
+    width: 10%;
+    text-align: center;
+}
+
+.done button{
+    background-color: rgb(255, 255, 255);
+}
+
+.done button:hover {
+    color: rgb(152, 255, 143)
+}
+
+.remove {
+    text-align: center;
+    width: 10%
+}
+
+.remove button {
+    background-color: white;
+}
+
+.remove button:hover {
+    color: rgb(255, 143, 143)
+}
+
+.todo .todo-span {
+    width: 80%
+}
+.todo-span span {
+    line-height: 45px;
+    height: 100%
+}
+
+.header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+.finished {
+    text-decoration: line-through
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+}
+
+Input {
+    border: 1px solid rgb(24, 144, 255);
+    height: 40px;
+}
+
+Input.new-todo-list::placeholder {
+    font-weight: 0.5;
+    font-size: 13px;
+    color: rgb(161, 161, 161)
+}
+
+/* <----------------- SIDNAV ----------------->*/
+
+
+
+/* Animations */
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeOut .5s ease-out 1 forwards;
+}
+.slideUp {
+    animation: slideUp 1s ease-out 1 forwards;
+    opacity: 1;
+}
+@keyframes fadeOut {
+to {
+    opacity: 0;
+}
+}
+@keyframes slideUp {
+    to {
+      bottom: 50px;
+      opacity: 0;
+    }
+  }
